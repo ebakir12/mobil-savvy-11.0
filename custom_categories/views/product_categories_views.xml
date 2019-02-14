@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="custom_product_categories" name="Custom Product Categories">
+        <section>
+        Show:
+            <t t-foreach="categories" t-as="category">
+                <div><t t-esc="category.name"/>-<t t-esc="category.id"/></div>
+            </t>
+        </section>
+    </template>
+</odoo>
